@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opender - PhotoEdit Pro</title>
+    <link rel="icon" href="register.png" type="image/x-icon">
+
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 60px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; /* Abstand zwischen Links */
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .navbar a:hover {
+            color: #ff6347;
+            background-color: #444;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .head h3 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .details-link {
+            display: inline-block;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: color 0.3s;
+        }
+
+        .details-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        .footer-text {
+            color: #666;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+       
+        /* Login Container */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 400px;
+            margin-top: auto; /* Abstand zur Navbar */
+            margin-bottom: auto;
+        }
+        
+        /* Login Box */
+        .login-box {
+            background-color: #ffffff;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        /* Label und Input */
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-size: 14px;
+            color: #333;
+            text-align: left;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        /* Anmeldebutton */
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }  
+
+        /* Stil für Links unter dem Formular */
+        .login-link {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <img src="register.png" class="logo" alt="Login Icon">
+            <h2>Registrieren</h2>
+            <form action="login" method="post">
+                <label for="mail">E-Mail</label>
+                <input type="text" id="mail" name="mail" required>
+
+                <label for="username">Telefonummer (Firma)</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="username">Telefonummer (Privat)</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="username">Land</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="username">Stadt / Ort</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="username">Straße</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="username">Firma</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="username">Benutzername</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="password">Passwort</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="password">Passwort wiederholen</label>
+                <input type="password" id="password" name="password" required>
+        
+                <button type="submit">Registrieren</button>
+
+                <a href="login.html" class="login-link">Zurück zum Login ?</a>
+                <a href="help.html" class="login-link">HILFE</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opender - PhotoEdit Pro</title>
+    <link rel="icon" href="image.png" type="image/x-icon">
+
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 60px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .navbar a:hover {
+            color: #ff6347;
+            background-color: #444;
+        }
+
+        /* Container Styles */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .head h3 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .details-link, .show-more-link {
+            display: inline-block;
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 10px;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .details-link:hover, .show-more-link:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        /* Hidden Content Styling */
+        .more-text {
+            display: none;
+            margin-top: 20px;
+        }
+
+        /* Footer Styling */
+        .footer-text {
+            color: #666;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="opender.html">Home</a>
+            <a href="download.html">Download</a>
+            <a href="tutorials.html">Dokumentation</a>
+            <a href="login.html">Login</a>
+            <a href="help.html">Hilfe</a>
+        </div>
+    </nav>
+
+    <!-- Content Container -->
+    <div class="container">
+        <div class="box">
+            <div class="head">
+                <h3>Bildbearbeitungsprogramm für Windows, macOS und Linux: PhotoEdit Pro</h3>
+            </div>
+            <p>In der digitalen Welt ist die Bearbeitung von Fotos unverzichtbar. PhotoEdit Pro bietet eine kostenlose, plattformübergreifende Lösung mit modernen Werkzeugen, KI-Unterstützung und Python-Integration.</p>
+
+            <h4>Hauptfunktionen</h4>
+            <ul>
+                <li><strong>Bildanpassungen:</strong> Optimierung von Helligkeit, Kontrast und Farben.</li>
+                <li><strong>Retusche-Werkzeuge:</strong> Präzises Bearbeiten von Details.</li>
+                <li><strong>Filter & Effekte:</strong> Über 100 voreingestellte Filter.</li>
+                <li><strong>Ebenen & Masken:</strong> Unterstützt komplexe Bearbeitungen.</li>
+            </ul>
+
+            <h4>Systemanforderungen</h4>
+            <ul>
+                <li>OS: Windows 10, macOS 10.14, Linux</li>
+                <li>Prozessor: Dual-Core 2 GHz</li>
+                <li>RAM: 4 GB (8 GB empfohlen)</li>
+                <li>Grafik: DirectX 11 oder OpenGL 3.3</li>
+            </ul>
+
+            <!-- Show More Link -->
+            <a class="show-more-link" onclick="toggleMoreText()">Mehr anzeigen</a>
+
+            <!-- Hidden Text -->
+            <div class="more-text" id="moreText">
+                <h2>Opender veröffentlicht PhotoEdit Pro: Die neue Alternative zu Photoshop</h2>
+                <p>
+                    Am <strong>9. November 2024</strong> feierte das Entwicklerteam von <strong>Opender</strong> die Markteinführung ihres neuesten Produkts, 
+                    <strong>PhotoEdit Pro</strong>. Diese innovative Bildbearbeitungssoftware bietet eine benutzerfreundliche Alternative zu etablierten Programmen 
+                    wie <strong>Photoshop</strong>, die oft als kompliziert und teuer gelten. Mit über <strong>134 leistungsstarken Funktionen</strong> setzt 
+                    PhotoEdit Pro auf einfache Bedienung und plattformübergreifende Verfügbarkeit, wodurch es sich ideal für Anfänger und Profis gleichermaßen eignet.
+                </p>
+        
+                <h3>Eine leistungsstarke Bildbearbeitungssoftware für alle</h3>
+                <p>
+                    <strong>PhotoEdit Pro</strong> bietet eine umfassende Lösung für die Bildbearbeitung, unabhängig von der Plattform. Die Software ist kompatibel 
+                    mit <strong>Windows</strong>, <strong>macOS</strong> und <strong>Linux</strong>, sodass sie auf den gängigsten Betriebssystemen genutzt werden kann. 
+                    Durch die geringen Systemanforderungen – mindestens <strong>4 GB RAM</strong> (8 GB empfohlen) und ein <strong>Dual-Core-Prozessor mit 2 GHz</strong> – 
+                    eignet sich die Anwendung auch für ältere Geräte und ermöglicht eine breite Nutzerschaft.
+                </p>
+                <p>
+                    Die Software kann in verschiedenen Formaten heruntergeladen werden, darunter <strong>.exe</strong> und <strong>.msi</strong> für Windows, 
+                    ein <strong>.deb-Paket</strong> für Linux sowie ein <strong>.zip-Archiv</strong> für eine manuelle Installation. Für Benutzer, die eine schnelle 
+                    und effiziente Download-Option bevorzugen, steht außerdem ein <strong>Torrent-File</strong> zur Verfügung.
+                </p>
+        
+                <h3>134 Funktionen für kreatives Arbeiten</h3>
+                <ul>
+                    <li><strong>Bildanpassungen:</strong> Optimierung von Helligkeit, Kontrast und Farben.</li>
+                    <li><strong>Retusche-Werkzeuge:</strong> Präzise Bearbeitung von Bilddetails, einschließlich Hautretusche und Objektentfernung.</li>
+                    <li><strong>Filter und Effekte:</strong> Über 100 voreingestellte Filter für kreative Möglichkeiten.</li>
+                    <li><strong>Ebenen und Masken:</strong> Unterstützung für komplexe, nicht-destruktive Bildbearbeitung.</li>
+                    <li><strong>Python-Integration:</strong> Skripte und Plugins zur Erweiterung der Funktionalität.</li>
+                </ul>
+        
+                <h3>Ein Projekt in ständiger Weiterentwicklung</h3>
+                <p>
+                    Das <strong>Opender</strong>-Team plant, <strong>PhotoEdit Pro</strong> kontinuierlich weiterzuentwickeln. In zukünftigen Updates liegt der 
+                    Fokus auf der Integration von <strong>Künstlicher Intelligenz (KI)</strong>, die automatische Bildverbesserungen ermöglichen wird. Dazu gehören 
+                    Funktionen wie das Erkennen und Optimieren von Gesichtern, das Entfernen von Objekten sowie das automatische Hinzufügen von Effekten.
+                </p>
+        
+                <h3>Werden Sie Teil des Opender-Teams</h3>
+                <p>
+                    <strong>Opender</strong> sucht motivierte Talente, die Teil des Teams werden möchten. Besonders gesucht werden:
+                </p>
+                <ul>
+                    <li><strong>C- und C#-Programmierer:</strong> Für die Entwicklung neuer Features und die Verbesserung der Performance.</li>
+                    <li><strong>Python-Entwickler:</strong> Für die Erweiterung der Skripting- und Plugin-Funktionalität.</li>
+                    <li><strong>Webentwickler:</strong> Zur Verbesserung der Website und der Nutzererfahrung.</li>
+                    <li><strong>Designer:</strong> Zur Gestaltung der Benutzeroberfläche und Erstellung neuer Filter und Effekte.</li>
+                </ul>
+                <p>
+                    Egal, ob Sie ein erfahrener <strong>Designer</strong>, <strong>Programmierer</strong> oder <strong>KI-Spezialist</strong> sind – bei uns haben Sie 
+                    die Möglichkeit, sich in einem dynamischen und kreativen Team einzubringen. Besuchen Sie unsere Webseite und bewerben Sie sich noch heute!
+                </p>
+        
+                <h3>Jetzt herunterladen und loslegen!</h3>
+                <p>
+                    Mit <strong>PhotoEdit Pro</strong> steht Ihnen eine flexible und benutzerfreundliche Bildbearbeitungssoftware zur Verfügung, die sowohl auf modernen 
+                    als auch auf älteren Systemen reibungslos läuft. Probieren Sie es aus und laden Sie die Software jetzt in Ihrem bevorzugten Format herunter:
+                </p>
+                <ul>
+                    <li><strong>Windows:</strong> EXE, MSI, ZIP</li>
+                    <li><strong>Linux:</strong> DEB-Paket</li>
+                    <li><strong>macOS:</strong> ZIP-Archiv</li>
+                    <li><strong>Torrent-Download:</strong> Für eine schnelle und einfache Verteilung</li>
+                </ul>
+                <p>
+                    Besuchen Sie unsere <a href="download.html" class="details-link">Download-Seite</a> und starten Sie Ihre kreative Reise mit <strong>PhotoEdit Pro</strong>. 
+                    Entdecken Sie, wie einfach und intuitiv Bildbearbeitung sein kann – die echte Alternative zu Photoshop!
+                </p>                      
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-text">
+        © 2024 PhotoEdit Pro. Alle Rechte vorbehalten.
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMoreText() {
+            const moreText = document.getElementById('moreText');
+            const showMoreLink = document.querySelector('.show-more-link');
+
+            if (moreText.style.display === 'none' || moreText.style.display === '') {
+                moreText.style.display = 'block';
+                showMoreLink.textContent = 'Weniger anzeigen';
+            } else {
+                moreText.style.display = 'none';
+                showMoreLink.textContent = 'Mehr anzeigen';
+            }
+        }
+    </script>
+</body>
+</html>

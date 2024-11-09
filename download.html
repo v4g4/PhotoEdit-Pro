@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opender Download</title>
+    <link rel="icon" href="download.png" type="image/x-icon">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding-top: 60px;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-container {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 8px 12px;
+            transition: color 0.3s, background-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .navbar a:hover {
+            color: #ff6347;
+            background-color: #444;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .head h3 {
+            text-align: center;
+            color: #007bff;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .container {
+            margin-top: 80px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        .download-box {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .download-box img {
+            width: 50px;
+            margin-right: 20px;
+        }
+
+        .download-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .download-info p {
+            font-size: 16px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .download-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="opender.html">Home</a>
+            <a href="download.html">Download</a>
+            <a href="tutorials.html">Dokumentation</a>
+            <a href="login.html">Login</a>
+            <a href="help.html">Hilfe</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="download-box">
+            <img src="win11.png" alt="Windows Icon">
+            <div class="download-info">
+                <p>Für Windows: 11</p>
+                <p>86-Bit Installer</p>
+            </div>
+            <a href="opender86.exe" download="opender86.exe" class="download-button">DOWNLOAD</a>
+        </div>
+
+        <div class="download-box">
+            <img src="win11.png" alt="Windows Icon">
+            <div class="download-info">
+                <p>Für Windows: 10 und 11</p>
+                <p>64-Bit Installer</p>
+            </div>
+            <a href="opender64.exe" download="opender64.exe" class="download-button">DOWNLOAD</a>
+        </div>
+
+        <div class="download-box">
+            <img src="win11.png" alt="Windows Icon">
+            <div class="download-info">
+                <p>Für alle Windows:</p>
+                <p>Windows Installer (MSI)</p>
+            </div>
+            <a href="opender.msi" download="opender.msi" class="download-button">DOWNLOAD</a>
+        </div>
+
+        <div class="download-box">
+            <img src="Windows-icon.png" alt="Windows Icon">
+            <div class="download-info">
+                <p>Für ältere Windows:</p>
+                <p>32-Bit Installer</p>
+            </div>
+            <a href="opender32.exe" download="opender32.exe" class="download-button">DOWNLOAD</a>
+        </div>
+
+        <div class="download-box">
+            <img src="Windows-icon.png" alt="Windows Icon">
+            <div class="download-info">
+                <p>Für alle Windows:</p>
+                <p>Zip File</p>
+            </div>
+            <a href="opender 5.0.zip" download="opender 5.0.zip" class="download-button">DOWNLOAD</a>
+        </div>
+
+        <div class="download-box">
+            <img src="123.png" alt="Windows Icon">
+            <div class="download-info">
+                <p>Für Windows:</p>
+                <p>Torrent</p>
+            </div>
+            <a href="opender.exe.torrent" download="opender.exe.torrent" class="download-button">DOWNLOAD</a>
+        </div>
+
+        <div class="download-box">
+            <img src="Systems-Mac-Os-icon.png" alt="Mac OS Icon">
+            <div class="download-info">
+                <p>Für Mac OS:</p>
+                <p>Zip File</p>
+            </div>
+            <a href="opender 5.0 mac.zip" download="opender 5.0 mac.zip" class="download-button">DOWNLOAD</a>
+        </div>
+
+        <div class="download-box">
+            <img src="OS-Linux-icon.png" alt="Linux Icon">
+            <div class="download-info">
+                <p>Für Linux:</p>
+                <p>Deb-Paket</p>
+            </div>
+            <a href="opender 5.0.deb" download="opender 5.0.deb" class="download-button">DOWNLOAD</a>
+        </div>
+    </div>
+</body>
+</html>
